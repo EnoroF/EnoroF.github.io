@@ -1,0 +1,47 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            EnoroF
+tagline:          'A Zealot'
+description:      'A Zealot.'
+url:              http://EnoroF.github.io
+baseurl:          /
+
+#category
+cate:
+  tech:			  tech
+  life:			  life
+  art:			  art
+
+author:
+  name:           'EnoroF'
+  url:            https://github.com/EnoroF
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/EnoroF
+
+# Includes an icon in the footer for each username you enter
+footer-links:
+  dribbble:
+  email: EnoroF@gmail.com
+  facebook:
+  flickr:
+  github: EnoroF
+  instagram: EnoroF
+  linkedin: EnoroF
+  pinterest:
+  rss: do# just type anything here for a working RSS icon, make sure you set the "url" above!
+  twitter: 
+  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  youtube: # channel/<your_long_string> or user/<user-name>

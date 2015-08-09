@@ -1,0 +1,1 @@
+<embed src=http://filer.blogbus.com/4205174/resource_420517412637275892.swf width=1003 height=293 >

@@ -1,0 +1,60 @@
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+  
+    <div class="sidebar-about">
+      <img src="https://raw.githubusercontent.com/enorof/enorof.github.io/master/images/EnoroF.jpg" width="180" height="180" alt="EnoroF" style="margin: auto auto 2rem auto;">
+    </div>
+	    <footer class="footer" style="margin: 1rem auto 1rem auto;">
+          {% include svg-icons.html %}
+        </footer>
+    <div class="sidebar-about">
+      <h1>
+        <a href="{{ site.baseurl }}">
+          {{ site.title }}
+        </a>
+      </h1>
+      <p class="lead">{{ site.description }}</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Blog</a>
+
+      {% comment %}
+        The code below dynamically generates a sidebar nav of pages with
+        `layout: page` in the front-matter. See readme for usage.
+      {% endcomment %}
+
+      {% assign pages_list = site.pages %}
+      {% for node in pages_list %}
+        {% if node.title != "category" %}
+          {% if node.layout == "page" %}
+            {% if node.location == "cate" %}
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">&nbsp&nbsp&nbsp{{ node.title }}</a>
+            {% endif %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      
+      
+      {% assign pages_list = site.pages %}
+      {% for node in pages_list %}
+        {% if node.title != "category" %}
+          {% if node.layout == "page" %}
+            {% if node.location == "head" %}
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+            {% endif %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      <!-- <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a> -->
+      <a class="sidebar-nav-item" href="https://github.com/EnoroF/">Github</a>
+    </nav>
+
+    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+    
+    <span id="container_site_counter" style="display: inline;font-size: 15px;">
+    total visit <span id="value_site_counter"></span> times
+    </span>
+  </div>
+</div>
