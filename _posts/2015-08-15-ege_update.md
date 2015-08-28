@@ -12,18 +12,18 @@ EGE全称为EnoroF's Game Engine, 于2012年5月在大四在学校进行开发, 
 
 ***
 ### 目录
-- [ ] Core
-    - [ ] Unreal方式完成RTTI改造
-    - [ ] Unreal平台工具链
-    - [ ] Module拆分
-- [ ] Renderer
-    - [ ] 集成VXGI
-    - [ ] 集成SVO
-    - [ ] 集成LPV
-- [ ] UI
-    - [ ] 移植Unreal-Slate
-- [ ] GameFramework
-    - [ ] BehaviorTree
-    - [ ] 移植Unreal-BluePrint
-- [ ] Script
-    - [ ] 增加模板支持
+	- [ ] Core
+	    - [ ] Unreal方式完成RTTI改造
+	    - [ ] Unreal平台工具链
+	    - [ ] Module拆分
+	- [ ] Renderer
+	    - [ ] 集成VXGI
+	    - [ ] 集成SVO
+	    - [ ] 集成LPV
+	- [ ] UI
+	    - [ ] 移植Unreal-Slate
+	- [ ] GameFramework
+	    - [ ] BehaviorTree
+	    - [ ] 移植Unreal-BluePrint
+	- [ ] Script
+	    - [ ] 增加模板支持
