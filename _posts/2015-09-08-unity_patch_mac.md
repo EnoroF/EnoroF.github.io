@@ -7,6 +7,8 @@ category: tech
 ## 步骤
 #### 下载破解工具
 下载地址:
+[For Window](https://github.com/EnoroF/EnoroF.github.io/blob/master/download/unity_patch/unpch105.zip)
+[For Mac](https://github.com/EnoroF/EnoroF.github.io/blob/master/download/unity_patch/unpchmac105.zip)
 #### Mac破解
 1. 把安装好的Mac版Untiy下的Application/Unity/Unity.app/Contents/MacOS/下的Unity拷贝到windows系统中
 2. 解压破解工具到同一目录
