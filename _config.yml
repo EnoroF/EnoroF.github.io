@@ -4,12 +4,12 @@ highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
-relative_permalinks: true
+relative_permalinks: false
 
 # Setup
 title:            EnoroF
-tagline:          'A Zealot'
-description:      'A Zealot.'
+tagline:          'Chief Front Desk'
+description:      'Chief Front Desk.'
 url:              http://EnoroF.github.io
 baseurl:          /
 
