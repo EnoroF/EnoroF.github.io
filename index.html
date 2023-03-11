@@ -39,7 +39,7 @@
     <!--<script>navigator.serviceWorker.register('service-worker.js');</script>-->
     <script src="js/decode.min.js"></script>
     <script type="module">
-        import { BrotliDecode } from './decode.min.js';
+        import { BrotliDecode } from './js/decode.min.js';
         Blazor.start({
             loadBootResource: function (type, name, defaultUri, integrity) {
                 if (type !== 'dotnetjs' && location.hostname !== 'localhost') {
