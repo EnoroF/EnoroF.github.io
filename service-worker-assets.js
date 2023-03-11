@@ -25,8 +25,12 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-7JWN3PWaLnVwN4hMvjsCu4q+xB1n7kszfGheq0cijGU=",
+      "hash": "sha256-r8RrjE\/aR2RCcrPRV0OJkLbjjj+QohbfglNAoQgMfxA=",
       "url": "index.html"
+    },
+    {
+      "hash": "sha256-10aXol7Onqv85rtqJQkZlzfW6xUpX0kH79yOSrF0JS8=",
+      "url": "js\/decode.min.js"
     },
     {
       "hash": "sha256-5ULKF5Sb6mG+2+VbCIbk+MCTjKXCzsJePFDOr63FncQ=",
@@ -261,5 +265,5 @@
       "url": "_content\/MudBlazor\/MudBlazor.min.js"
     }
   ],
-  "version": "JWgNbUxi"
+  "version": "3k7+JhbW"
 };
