@@ -48,16 +48,16 @@
       "System.Text.Json.dll": "sha256-O1ZJbFtmnbh0MSaCOWFsEUIy8r2xhxCbCoVgbUjWZY8=",
       "System.Text.RegularExpressions.dll": "sha256-TjhYd7tjtgTXOzDjlCzA2U5gxnkdnXPHn8xDIp4rD\/c=",
       "System.Threading.dll": "sha256-APHFsmyxV\/bxMqz4BWaGqIrm+ZnCmwJx4mYhA5En93I=",
-      "Unreal.Wiki.dll": "sha256-m\/H20KpQBWgVp0kicHBtoAZLKM3BFKzUo7d8V9nxlTQ="
+      "Unreal.Wiki.dll": "sha256-gMusBrFBtBpHKnJLmq+fT90Uumqw3mhGLOV0vGL\/0FY="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": null,
     "runtime": {
-      "dotnet.6.0.14.glme4z15ic.js": "sha256-RRhlUJN6P+zdSBJkhTvxlMNvkhx8ZT3gfUeHRgxRxI0=",
+      "dotnet.6.0.14.glme4z15ic.js": "sha256-OPWxWLfyHXuMwHRe48HWP6S6oXEpjUWi0cBabCiRW08=",
       "dotnet.timezones.blat": "sha256-SfxsI5ShckhP73xCMgz3EUrJ5z217yWRW+XFEaAdTwU=",
-      "dotnet.wasm": "sha256-Q4dgCJciUf\/y2gXFML1w6llrhPohybwvOLcpnaVHKrY=",
+      "dotnet.wasm": "sha256-kAhQmWIrKXDngJMeYU4O5YVfe01rS9HQ2lxoNAFo1rI=",
       "icudt.dat": "sha256-Zuq0dWAsBm6\/2lSOsz7+H9PvFaRn61KIXHMMwXDfvyE=",
       "icudt_CJK.dat": "sha256-WPyI4hWDPnOw62Nr27FkzGjdbucZnQD+Ph+GOPhAedw=",
       "icudt_EFIGS.dat": "sha256-4RwaPx87Z4dvn77ie\/ro3\/QzyS+\/gGmO3Y\/0CSAXw4k=",
@@ -66,7 +66,7 @@
     "runtimeAssets": {
       "dotnet.wasm": {
         "behavior": "dotnetwasm",
-        "hash": "sha256-Q4dgCJciUf\/y2gXFML1w6llrhPohybwvOLcpnaVHKrY="
+        "hash": "sha256-kAhQmWIrKXDngJMeYU4O5YVfe01rS9HQ2lxoNAFo1rI="
       }
     },
     "satelliteResources": null
