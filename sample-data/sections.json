@@ -1,5 +1,53 @@
 [
   {
+    "Title": "热门",
+    "Icon": "Whatshot",
+    "Articles": [
+      {
+        "Title": "ChatGPT",
+        "Description": "OpenAI开发的万能AI对话机器人",
+        "Url": "https://chat.openai.com",
+        "Icon": "sample-data/icon/b1528-chat.openai.com.png"
+      },
+      {
+        "Title": "Midjourney",
+        "Description": "输入你想到的文字，就能通过人工智能产出相对应的图片",
+        "Url": "https://https://discord.com/invite/midjourney",
+        "Icon": "sample-data/icon/9c4ce-nijijourney.com.png"
+      },
+      {
+        "Title": "Stable Diffusion",
+        "Description": "高性能模型，它生成的图像质量更高、运行速度更快、消耗的资源以及内存占用更小",
+        "Url": "https://ommer-lab.com/research/latent-diffusion-models/",
+        "Icon": "sample-data/icon/logo_runway-150x150.png"
+      },
+      {
+        "Title": "Fliki",
+        "Description": "最好用的通过文字生成视频工具",
+        "Url": "https://fliki.ai/",
+        "Icon": "sample-data/icon/fliki.png"
+      },
+      {
+        "Title": "Mubert",
+        "Description": "最好的文字生成音乐工具",
+        "Url": "https://mubert.com/",
+        "Icon": "sample-data/icon/logo-header.f3d24c31.svg"
+      },
+      {
+        "Title": "Murf",
+        "Description": "最好的文本生成语音工具",
+        "Url": "https://murf.ai/",
+        "Icon": "sample-data/icon/murf.png"
+      },
+      {
+        "Title": "ControlNet",
+        "Description": "Diffusion增加更多控制手段",
+        "Url": "https://github.com/lllyasviel/ControlNet",
+        "Icon": "sample-data/icon/github.png"
+      }
+    ]
+  },
+  {
     "Title": "游戏",
     "Icon": "VideogameAsset",
     "Articles": [
