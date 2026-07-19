@@ -1,78 +1,94 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Unreal.Wiki</title>
-    <base href="/" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-    <link href="_content/MudBlazor/MudBlazor.min.css" rel="stylesheet" />
-    <!-- Start Single Page Apps for GitHub Pages -->
-    <script type="text/javascript">
-        // Single Page Apps for GitHub Pages
-        // https://github.com/rafrex/spa-github-pages
-        // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
-        // ----------------------------------------------------------------------
-        // This script checks to see if a redirect is present in the query string
-        // and converts it back into the correct url and adds it to the
-        // browser's history using window.history.replaceState(...),
-        // which won't cause the browser to attempt to load the new url.
-        // When the single page app is loaded further down in this file,
-        // the correct url will be waiting in the browser's history for
-        // the single page app to route accordingly.
-        (function (l) {
-            if (l.search) {
-                var q = {};
-                l.search.slice(1).split('&').forEach(function (v) {
-                    var a = v.split('=');
-                    q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
-                });
-                if (q.p !== undefined) {
-                    window.history.replaceState(null, null,
-                        l.pathname.slice(0, -1) + (q.p || '') +
-                        (q.q ? ('?' + q.q) : '') +
-                        l.hash
-                    );
-                }
-            }
-        }(window.location))
-    </script>
-    <!-- End Single Page Apps for GitHub Pages -->
-</head>
-
-<body>
-    <div id="app">Loading...</div>
-
-    <div id="blazor-error-ui">
-        An unhandled error has occurred.
-        <a href="" class="reload">Reload</a>
-        <a class="dismiss">🗙</a>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Access AI from anywhere, bring in anything from local or online sources, and present it the way it deserves to be seen."
+    />
+    <meta name="theme-color" content="#010204" />
+    <link rel="preload" as="image" href="./moria-logo.svg" />
+    <link rel="icon" type="image/svg+xml" href="./moria-logo.svg" />
+    <title>Moria Agent - Everywhere, Anything</title>
+    <style>
+      :root { color-scheme: dark; background: #010204; }
+      * { box-sizing: border-box; }
+      html, body, #root { width: 100%; height: 100%; margin: 0; overflow: hidden; }
+      body { font-family: Inter, ui-sans-serif, sans-serif; }
+      .boot-shell {
+        position: fixed;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        color: #f6f7fb;
+        background:
+          linear-gradient(90deg, rgba(255,255,255,.032) 1px, transparent 1px),
+          linear-gradient(rgba(255,255,255,.032) 1px, transparent 1px),
+          radial-gradient(circle at 74% 28%, rgba(245,227,190,.08), transparent 29%),
+          linear-gradient(140deg, #080a10 0%, #05060a 56%, #080811 100%);
+        background-size: 56px 56px, 56px 56px, auto, auto;
+      }
+      .boot-content { text-align: center; transform: translateY(-2svh); }
+      .boot-brand {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        margin-bottom: 28px;
+        font-size: clamp(20px, 4svh, 32px);
+        font-weight: 680;
+      }
+      .boot-brand img { width: clamp(32px, 6.9svh, 56px); height: clamp(32px, 6.9svh, 56px); }
+      .boot-title {
+        margin: 0;
+        font-size: clamp(44px, 10.6svh, 86px);
+        font-weight: 670;
+        letter-spacing: -.067em;
+        line-height: .96;
+      }
+      .boot-title span { display: inline-block; margin-top: clamp(8px, 2.2svh, 18px); color: #f7f7fa; }
+      .boot-status {
+        position: fixed;
+        left: 50%;
+        bottom: 24px;
+        transform: translateX(-50%);
+        padding: 10px 14px;
+        border: 1px solid rgba(255,255,255,.1);
+        border-radius: 999px;
+        color: rgba(255,255,255,.56);
+        background: rgba(5,6,9,.8);
+        font: 9px ui-monospace, monospace;
+        letter-spacing: .12em;
+        white-space: nowrap;
+      }
+      .boot-status i {
+        width: 6px;
+        height: 6px;
+        display: inline-block;
+        margin-right: 8px;
+        border-radius: 50%;
+        background: #f5e3be;
+        box-shadow: 0 0 12px #f5e3be;
+        animation: boot-pulse 1.2s ease-in-out infinite;
+      }
+      @keyframes boot-pulse { 50% { opacity: .35; } }
+      @media (prefers-reduced-motion: reduce) { .boot-status i { animation: none; } }
+    </style>
+    <script type="module" crossorigin src="/assets/app.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime.js">
+    <link rel="modulepreload" crossorigin href="/assets/scene.js">
+    <link rel="stylesheet" crossorigin href="/assets/app.css">
+  </head>
+  <body>
+    <div id="root">
+      <main class="boot-shell" aria-label="Loading Moria Agent" aria-busy="true">
+        <div class="boot-content">
+          <div class="boot-brand"><img src="./moria-logo.svg" alt="" /><span>Moria</span></div>
+          <h1 class="boot-title">Everywhere<br /><span>Beautifully structured</span></h1>
+        </div>
+        <div class="boot-status" role="status"><i></i>LOADING INTERACTIVE LIGHT</div>
+      </main>
     </div>
-    <script src="decode.js"></script>
-    <script src="_framework/blazor.webassembly.js" autostart="false"></script>
-    <script src="_content/MudBlazor/MudBlazor.min.js"></script>
-    <script>
-        Blazor.start({
-            loadBootResource: function (type, name, defaultUri, integrity) {
-                // For framework resources, use the precompressed .br files for faster downloads
-                // This is needed only because GitHub pages doesn't natively support Brotli (or even gzip for .dll files)
-                if (type !== 'dotnetjs' && location.hostname !== 'localhost') {
-                    return (async function () {
-                        const response = await fetch(defaultUri + '.br', { cache: 'no-cache' });
-                        if (!response.ok) {
-                            throw new Error(response.statusText);
-                        }
-                        const originalResponseBuffer = await response.arrayBuffer();
-                        const originalResponseArray = new Int8Array(originalResponseBuffer);
-                        const decompressedResponseArray = BrotliDecode(originalResponseArray);
-                        const contentType = type === 'dotnetwasm' ? 'application/wasm' : 'application/octet-stream';
-                        return new Response(decompressedResponseArray, { headers: { 'content-type': contentType } });
-                    })();
-                }
-            }
-        });
-    </script>
-</body>
-
+  </body>
 </html>
