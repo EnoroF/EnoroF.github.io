@@ -1,0 +1,2 @@
+:HL["/_next/static/chunks/39p-lros9cxol.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"docs","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"oc","key":"moria-agent/reference/config/preferences","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"lfBvTBEQeN-I7KmzIByh3"}
